@@ -14,7 +14,7 @@ namespace TeknikServis
     
     public partial class TBLFATURADETAY
     {
-        public int FATURADETAYID { get; set; }
+        public int ID { get; set; }
         public string URUN { get; set; }
         public Nullable<short> ADET { get; set; }
         public Nullable<decimal> FIYAT { get; set; }

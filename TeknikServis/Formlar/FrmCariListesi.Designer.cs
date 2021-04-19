@@ -411,7 +411,7 @@ namespace TeknikServis.Formlar
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.IndianRed;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.labelControl13);
             this.panel1.Controls.Add(this.labelControl14);
             this.panel1.Location = new System.Drawing.Point(362, 15);
@@ -445,7 +445,7 @@ namespace TeknikServis.Formlar
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.Orange;
             this.panel2.Controls.Add(this.labelControl15);
             this.panel2.Controls.Add(this.labelControl16);
             this.panel2.Location = new System.Drawing.Point(5, 15);
@@ -479,7 +479,7 @@ namespace TeknikServis.Formlar
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Controls.Add(this.labelControl17);
             this.panel3.Controls.Add(this.labelControl18);
             this.panel3.Location = new System.Drawing.Point(719, 15);

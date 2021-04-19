@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="89663d5d61b24655ae2927ec422f973e" Name="Diagram1">
+      <Diagram DiagramId="3289ff7897104b82af647c50ffa19e4a" Name="Diagram1">
         <EntityTypeShape EntityType="DBTEKNIKSERVISModel.TBLADMIN" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DBTEKNIKSERVISModel.TBLARACLAR" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DBTEKNIKSERVISModel.TBLARIZADETAY" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />

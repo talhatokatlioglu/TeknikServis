@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DBTEKNIKSERVISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DBTEKNIKSERVISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TBLADMIN">
           <Key>
             <PropertyRef Name="ID" />
@@ -72,9 +72,9 @@
         </EntityType>
         <EntityType Name="TBLFATURADETAY">
           <Key>
-            <PropertyRef Name="FATURADETAYID" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="FATURADETAYID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="URUN" Type="varchar" MaxLength="50" />
           <Property Name="ADET" Type="smallint" />
           <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
@@ -105,6 +105,7 @@
           <Property Name="BASLIK" Type="varchar" MaxLength="50" />
           <Property Name="ICERIK" Type="varchar" MaxLength="500" />
           <Property Name="DURUM" Type="bit" />
+          <Property Name="TARIH" Type="smalldatetime" />
         </EntityType>
         <EntityType Name="TBLPERSONEL">
           <Key>
@@ -325,8 +326,7 @@
             <End Role="TBLURUNKABUL" EntitySet="TBLURUNKABUL" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DBTEKNIKSERVISModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -404,9 +404,9 @@
         </EntityType>
         <EntityType Name="TBLFATURADETAY">
           <Key>
-            <PropertyRef Name="FATURADETAYID" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="FATURADETAYID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="URUN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ADET" Type="Int16" />
           <Property Name="FIYAT" Type="Decimal" Precision="18" Scale="2" />
@@ -439,6 +439,7 @@
           <Property Name="BASLIK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ICERIK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="DURUM" Type="Boolean" />
+          <Property Name="TARIH" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="TBLPERSONEL">
           <Key>
@@ -748,7 +749,7 @@
           <EntitySetMapping Name="TBLFATURADETAY">
             <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBLFATURADETAY">
               <MappingFragment StoreEntitySet="TBLFATURADETAY">
-                <ScalarProperty Name="FATURADETAYID" ColumnName="FATURADETAYID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="URUN" ColumnName="URUN" />
                 <ScalarProperty Name="ADET" ColumnName="ADET" />
                 <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
@@ -778,6 +779,7 @@
           <EntitySetMapping Name="TBLNOTLARIM">
             <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBLNOTLARIM">
               <MappingFragment StoreEntitySet="TBLNOTLARIM">
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
                 <ScalarProperty Name="ICERIK" ColumnName="ICERIK" />

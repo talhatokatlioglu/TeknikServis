@@ -109,5 +109,33 @@ namespace TeknikServis.Formlar
             lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("CARI").ToString();
             lookUpEdit2.Text = gridView1.GetFocusedRowCellValue("PERSONEL").ToString();
         }
+
+        private void FrmFaturaListesi_Activated(object sender, EventArgs e)
+        {
+            lookUpEdit1.Properties.DataSource = db.TBLCARI.Select(x => new
+            {
+                x.ID,
+                CARI = x.AD + " " + x.SOYAD
+            }).ToList();
+
+            lookUpEdit2.Properties.DataSource = db.TBLPERSONEL.Select(x => new
+            {
+                x.ID,
+                PERSONEL = x.AD + " " + x.SOYAD
+            }).ToList();
+
+            gridControl1.DataSource = db.TBLFATURABILGI.Select(x => new
+            {
+                x.ID,
+                x.SERI,
+                x.SIRANO,
+                x.TARIH,
+                x.SAAT,
+                x.VERGIDAIRE,
+                CARI = x.TBLCARI.AD + " " + x.TBLCARI.SOYAD,
+                PERSONEL = x.TBLPERSONEL.AD + " " + x.TBLPERSONEL.SOYAD
+
+            }).ToList();
+        }
     }
 }

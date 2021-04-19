@@ -20,7 +20,12 @@ namespace TeknikServis
         void sekmeControl()//Max 21 sekmeye izin vermek icin
         {
             int tabSayac = xtraTabbedMdiManager1.Pages.Count();
-            if (tabSayac < 20)
+
+            if (tabSayac == 0)
+            {
+                panel1.Visible = true;
+            }
+            else if (tabSayac < 20)
             {
                 ribbonControl1.Enabled = true;
             }
@@ -248,6 +253,65 @@ namespace TeknikServis
             Formlar.FrmFaturaListesi FaturaListesiFormu = new Formlar.FrmFaturaListesi();
             FaturaListesiFormu.MdiParent = this;
             FaturaListesiFormu.Show();
+        }
+
+        private void BtnYeniFaturaGirişi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYeniFaturaGirisi YeniFaturaGirisiFormu = new Formlar.FrmYeniFaturaGirisi();
+            YeniFaturaGirisiFormu.Show();
+        }
+
+        private void BtnFaturaKalemGirisiFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            panel1.Visible = false;
+
+            Formlar.FrmFaturaKalemGirisi FaturaKalemGirisiFormu = new Formlar.FrmFaturaKalemGirisi();
+            FaturaKalemGirisiFormu.MdiParent = this;
+            FaturaKalemGirisiFormu.Show();
+        }
+
+        private void BtnDetayliFaturaSorgulamaFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            panel1.Visible = false;
+
+            Formlar.FrmDetayliFaturaSorgulama DetayliFaturaSorgulamaFormu = new Formlar.FrmDetayliFaturaSorgulama();
+            DetayliFaturaSorgulamaFormu.MdiParent = this;
+            DetayliFaturaSorgulamaFormu.Show();
+        }
+
+        private void BtnRaporFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            panel1.Visible = false;
+
+            Formlar.FrmRapor RaporFormu = new Formlar.FrmRapor();
+            //RaporFormu.MdiParent = this;
+            RaporFormu.Show();
+        }
+        Formlar.FrmAnasayfa AnasayfaFormu;
+        private void BtnAnasayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            panel1.Visible = false;
+
+            AnasayfaFormu = new Formlar.FrmAnasayfa();
+            AnasayfaFormu.MdiParent = this;
+            AnasayfaFormu.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // SAYFA BOŞSA ANASAYFAYI GETİR DEMEK
+            // DOLUYSA GETİRMİCEK YENİ SEKME ACMICAK
+
+            /*
+            if (AnasayfaFormu == null || AnasayfaFormu.IsDisposed)
+            {
+                panel1.Visible = false;
+
+                AnasayfaFormu = new Formlar.FrmAnasayfa();
+                AnasayfaFormu.MdiParent = this;
+                AnasayfaFormu.Show();
+            }
+            */
         }
     }
 }
