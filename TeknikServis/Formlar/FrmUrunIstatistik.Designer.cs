@@ -101,6 +101,8 @@ namespace TeknikServis.Formlar
             this.panel24 = new System.Windows.Forms.Panel();
             this.labelControl47 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl48 = new DevExpress.XtraEditors.LabelControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -125,6 +127,8 @@ namespace TeknikServis.Formlar
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -837,9 +841,9 @@ namespace TeknikServis.Formlar
             this.labelControl42.Appearance.Options.UseForeColor = true;
             this.labelControl42.Location = new System.Drawing.Point(27, 23);
             this.labelControl42.Name = "labelControl42";
-            this.labelControl42.Size = new System.Drawing.Size(77, 18);
+            this.labelControl42.Size = new System.Drawing.Size(111, 18);
             this.labelControl42.TabIndex = 2;
-            this.labelControl42.Text = "Kritik Seviye";
+            this.labelControl42.Text = "Arızalı Ürün Sayısı";
             // 
             // panel22
             // 
@@ -943,11 +947,27 @@ namespace TeknikServis.Formlar
             this.labelControl48.TabIndex = 0;
             this.labelControl48.Text = "Toplam Ürün Sayısı";
             // 
-            // FrmIstatistik
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(556, 184);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(400, 200);
+            this.gridControl1.TabIndex = 4;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // FrmUrunIstatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1840, 752);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel15);
@@ -972,7 +992,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "FrmIstatistik";
+            this.Name = "FrmUrunIstatistik";
             this.Text = "Ürün İstatistik";
             this.Activated += new System.EventHandler(this.FrmIstatistik_Activated);
             this.panel1.ResumeLayout(false);
@@ -1023,6 +1043,8 @@ namespace TeknikServis.Formlar
             this.panel23.PerformLayout();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1101,5 +1123,7 @@ namespace TeknikServis.Formlar
         private System.Windows.Forms.Panel panel24;
         private DevExpress.XtraEditors.LabelControl labelControl47;
         private DevExpress.XtraEditors.LabelControl labelControl48;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

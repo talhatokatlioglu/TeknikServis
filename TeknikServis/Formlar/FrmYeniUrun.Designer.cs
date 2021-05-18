@@ -67,7 +67,8 @@ namespace TeknikServis.Formlar
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(32, 56);
+            this.pictureEdit1.Location = new System.Drawing.Point(15, 32);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -76,20 +77,21 @@ namespace TeknikServis.Formlar
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.ZoomPercent = 80D;
-            this.pictureEdit1.Size = new System.Drawing.Size(64, 60);
+            this.pictureEdit1.Size = new System.Drawing.Size(80, 75);
             this.pictureEdit1.TabIndex = 1;
             // 
             // TxtUrunAdi
             // 
             this.TxtUrunAdi.EditValue = "Ürün Adı";
-            this.TxtUrunAdi.Location = new System.Drawing.Point(102, 81);
+            this.TxtUrunAdi.Location = new System.Drawing.Point(102, 82);
+            this.TxtUrunAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUrunAdi.Name = "TxtUrunAdi";
             this.TxtUrunAdi.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.TxtUrunAdi.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.TxtUrunAdi.Properties.Appearance.Options.UseBackColor = true;
             this.TxtUrunAdi.Properties.Appearance.Options.UseForeColor = true;
             this.TxtUrunAdi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtUrunAdi.Size = new System.Drawing.Size(203, 20);
+            this.TxtUrunAdi.Size = new System.Drawing.Size(254, 20);
             this.TxtUrunAdi.TabIndex = 2;
             this.TxtUrunAdi.Click += new System.EventHandler(this.TxtUrunAdi_Click);
             // 
@@ -114,21 +116,23 @@ namespace TeknikServis.Formlar
             // TxtUrunMarkasi
             // 
             this.TxtUrunMarkasi.EditValue = "Markası";
-            this.TxtUrunMarkasi.Location = new System.Drawing.Point(102, 139);
+            this.TxtUrunMarkasi.Location = new System.Drawing.Point(102, 140);
+            this.TxtUrunMarkasi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUrunMarkasi.Name = "TxtUrunMarkasi";
             this.TxtUrunMarkasi.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.TxtUrunMarkasi.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.TxtUrunMarkasi.Properties.Appearance.Options.UseBackColor = true;
             this.TxtUrunMarkasi.Properties.Appearance.Options.UseForeColor = true;
             this.TxtUrunMarkasi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtUrunMarkasi.Size = new System.Drawing.Size(203, 20);
+            this.TxtUrunMarkasi.Size = new System.Drawing.Size(254, 20);
             this.TxtUrunMarkasi.TabIndex = 5;
             this.TxtUrunMarkasi.Click += new System.EventHandler(this.TxtUrunMarkasi_Click);
             // 
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(32, 117);
+            this.pictureEdit2.Location = new System.Drawing.Point(15, 90);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -137,7 +141,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit2.Properties.ZoomPercent = 80D;
-            this.pictureEdit2.Size = new System.Drawing.Size(64, 60);
+            this.pictureEdit2.Size = new System.Drawing.Size(80, 75);
             this.pictureEdit2.TabIndex = 4;
             // 
             // panel3
@@ -152,7 +156,8 @@ namespace TeknikServis.Formlar
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(32, 183);
+            this.pictureEdit3.Location = new System.Drawing.Point(13, 151);
+            this.pictureEdit3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -161,7 +166,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit3.Properties.ZoomPercent = 80D;
-            this.pictureEdit3.Size = new System.Drawing.Size(64, 60);
+            this.pictureEdit3.Size = new System.Drawing.Size(80, 75);
             this.pictureEdit3.TabIndex = 7;
             // 
             // panel4
@@ -176,21 +181,23 @@ namespace TeknikServis.Formlar
             // TxtUrunAlisFiyati
             // 
             this.TxtUrunAlisFiyati.EditValue = "Alış Fiyatı";
-            this.TxtUrunAlisFiyati.Location = new System.Drawing.Point(102, 261);
+            this.TxtUrunAlisFiyati.Location = new System.Drawing.Point(102, 262);
+            this.TxtUrunAlisFiyati.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUrunAlisFiyati.Name = "TxtUrunAlisFiyati";
             this.TxtUrunAlisFiyati.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.TxtUrunAlisFiyati.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.TxtUrunAlisFiyati.Properties.Appearance.Options.UseBackColor = true;
             this.TxtUrunAlisFiyati.Properties.Appearance.Options.UseForeColor = true;
             this.TxtUrunAlisFiyati.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtUrunAlisFiyati.Size = new System.Drawing.Size(203, 20);
+            this.TxtUrunAlisFiyati.Size = new System.Drawing.Size(254, 20);
             this.TxtUrunAlisFiyati.TabIndex = 11;
             this.TxtUrunAlisFiyati.Click += new System.EventHandler(this.TxtUrunAlisFiyati_Click);
             // 
             // pictureEdit4
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(32, 244);
+            this.pictureEdit4.Location = new System.Drawing.Point(13, 212);
+            this.pictureEdit4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -199,7 +206,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Properties.ZoomPercent = 80D;
-            this.pictureEdit4.Size = new System.Drawing.Size(64, 60);
+            this.pictureEdit4.Size = new System.Drawing.Size(80, 75);
             this.pictureEdit4.TabIndex = 10;
             // 
             // panel5
@@ -214,21 +221,23 @@ namespace TeknikServis.Formlar
             // TxtUrunSatisFiyati
             // 
             this.TxtUrunSatisFiyati.EditValue = "Satış Fiyatı";
-            this.TxtUrunSatisFiyati.Location = new System.Drawing.Point(102, 327);
+            this.TxtUrunSatisFiyati.Location = new System.Drawing.Point(102, 328);
+            this.TxtUrunSatisFiyati.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUrunSatisFiyati.Name = "TxtUrunSatisFiyati";
             this.TxtUrunSatisFiyati.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.TxtUrunSatisFiyati.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.TxtUrunSatisFiyati.Properties.Appearance.Options.UseBackColor = true;
             this.TxtUrunSatisFiyati.Properties.Appearance.Options.UseForeColor = true;
             this.TxtUrunSatisFiyati.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtUrunSatisFiyati.Size = new System.Drawing.Size(203, 20);
+            this.TxtUrunSatisFiyati.Size = new System.Drawing.Size(254, 20);
             this.TxtUrunSatisFiyati.TabIndex = 14;
             this.TxtUrunSatisFiyati.Click += new System.EventHandler(this.TxtUrunSatisFiyati_Click);
             // 
             // pictureEdit5
             // 
             this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(32, 301);
+            this.pictureEdit5.Location = new System.Drawing.Point(13, 278);
+            this.pictureEdit5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit5.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -237,7 +246,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit5.Properties.ZoomPercent = 80D;
-            this.pictureEdit5.Size = new System.Drawing.Size(64, 60);
+            this.pictureEdit5.Size = new System.Drawing.Size(80, 75);
             this.pictureEdit5.TabIndex = 13;
             // 
             // panel6
@@ -252,21 +261,23 @@ namespace TeknikServis.Formlar
             // TxtUrunStokAdedi
             // 
             this.TxtUrunStokAdedi.EditValue = "Stok Adedi";
-            this.TxtUrunStokAdedi.Location = new System.Drawing.Point(102, 384);
+            this.TxtUrunStokAdedi.Location = new System.Drawing.Point(102, 385);
+            this.TxtUrunStokAdedi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUrunStokAdedi.Name = "TxtUrunStokAdedi";
             this.TxtUrunStokAdedi.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.TxtUrunStokAdedi.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.TxtUrunStokAdedi.Properties.Appearance.Options.UseBackColor = true;
             this.TxtUrunStokAdedi.Properties.Appearance.Options.UseForeColor = true;
             this.TxtUrunStokAdedi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtUrunStokAdedi.Size = new System.Drawing.Size(203, 20);
+            this.TxtUrunStokAdedi.Size = new System.Drawing.Size(254, 20);
             this.TxtUrunStokAdedi.TabIndex = 17;
             this.TxtUrunStokAdedi.Click += new System.EventHandler(this.TxtUrunStokAdedi_Click);
             // 
             // pictureEdit7
             // 
             this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(32, 367);
+            this.pictureEdit7.Location = new System.Drawing.Point(15, 350);
+            this.pictureEdit7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit7.Name = "pictureEdit7";
             this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit7.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -275,7 +286,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit7.Properties.ZoomPercent = 80D;
-            this.pictureEdit7.Size = new System.Drawing.Size(64, 60);
+            this.pictureEdit7.Size = new System.Drawing.Size(80, 75);
             this.pictureEdit7.TabIndex = 16;
             // 
             // BtnCikis
@@ -283,10 +294,11 @@ namespace TeknikServis.Formlar
             this.BtnCikis.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.BtnCikis.Appearance.Options.UseForeColor = true;
             this.BtnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCikis.ImageOptions.Image")));
-            this.BtnCikis.Location = new System.Drawing.Point(266, 432);
+            this.BtnCikis.Location = new System.Drawing.Point(276, 413);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.BtnCikis.Size = new System.Drawing.Size(87, 70);
+            this.BtnCikis.Size = new System.Drawing.Size(109, 88);
             this.BtnCikis.TabIndex = 20;
             this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
@@ -295,17 +307,19 @@ namespace TeknikServis.Formlar
             this.BtnKaydet.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.BtnKaydet.Appearance.Options.UseForeColor = true;
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(128, 432);
+            this.BtnKaydet.Location = new System.Drawing.Point(140, 413);
+            this.BtnKaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.BtnKaydet.Size = new System.Drawing.Size(87, 70);
+            this.BtnKaydet.Size = new System.Drawing.Size(109, 88);
             this.BtnKaydet.TabIndex = 21;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // lookUpEdit1
             // 
             this.lookUpEdit1.EditValue = "";
-            this.lookUpEdit1.Location = new System.Drawing.Point(102, 200);
+            this.lookUpEdit1.Location = new System.Drawing.Point(102, 201);
+            this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -314,7 +328,7 @@ namespace TeknikServis.Formlar
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DisplayMember = "KATEGORI";
             this.lookUpEdit1.Properties.ValueMember = "ID";
-            this.lookUpEdit1.Size = new System.Drawing.Size(181, 20);
+            this.lookUpEdit1.Size = new System.Drawing.Size(226, 20);
             this.lookUpEdit1.TabIndex = 22;
             // 
             // FrmYeniUrun
@@ -322,7 +336,7 @@ namespace TeknikServis.Formlar
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(457, 545);
+            this.ClientSize = new System.Drawing.Size(457, 518);
             this.Controls.Add(this.lookUpEdit1);
             this.Controls.Add(this.BtnKaydet);
             this.Controls.Add(this.BtnCikis);

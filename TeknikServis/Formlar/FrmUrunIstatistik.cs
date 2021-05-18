@@ -33,7 +33,7 @@ namespace TeknikServis.Formlar
 
             labelControl33.Text = (from x in db.TBLURUN
                                    orderby x.STOK ascending
-                                   select x.AD).FirstOrDefault(); // En az stoklu urun adı
+                                   select x.AD).FirstOrDefault(); // En az stoklu urunğ adı
 
             labelControl13.Text = (from x in db.TBLURUN
                                    orderby x.SATISFIYAT descending
@@ -59,11 +59,23 @@ namespace TeknikServis.Formlar
             labelControl41.Text = (from x in db.TBLURUN
                                    orderby x.STOK descending
                                    select x.AD).First(); //Stok sayısı en fazla olan urunun adı
-        }
 
+            //labelControl41.Text = db.TBLURUNKABUL.Count().ToString();
+            var degerler = (from x in db.TBLURUN
+                     join y in db.TBLKATEGORI
+                     on x.KATEGORI equals y.ID
+                     select new
+                     {
+                         y.AD,
+                         ururAd = x.AD
+                        
+                     }).OrderBy(y=>y.AD).GroupBy(u=>u.AD);
+            gridControl1.DataSource = degerler.ToList();
+        }
         private void FrmIstatistik_Activated(object sender, EventArgs e)
         {
             formLoad();//Form her active edildiğinde başta gelcek verileri yeniden yukle ki değşiklik yapıldıysa yeni veriler gelsin
         }
     }
 }
+    

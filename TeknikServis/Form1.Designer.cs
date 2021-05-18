@@ -66,9 +66,10 @@ namespace TeknikServis
             this.BtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.BtnExcel = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRehberFormu = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.BtnGelenMesajlarFormu = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnYeniMailFormu = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnAnasayfa = new DevExpress.XtraBars.BarButtonItem();
@@ -109,10 +110,13 @@ namespace TeknikServis
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -157,9 +161,9 @@ namespace TeknikServis
             this.BtnWord,
             this.BtnExcel,
             this.barButtonItem33,
-            this.barButtonItem34,
-            this.barButtonItem35,
-            this.barButtonItem36,
+            this.BtnRehberFormu,
+            this.BtnGelenMesajlarFormu,
+            this.BtnYeniMailFormu,
             this.barButtonItem37,
             this.barButtonItem38,
             this.BtnAnasayfa,
@@ -170,8 +174,10 @@ namespace TeknikServis
             this.BtnFaturaListesiFormu,
             this.BtnRaporFormu});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
             this.ribbonControl1.MaxItemId = 47;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.OptionsMenuMinWidth = 515;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
@@ -296,8 +302,8 @@ namespace TeknikServis
             this.BtnYeniCariFormu.Caption = "Yeni Cari";
             this.BtnYeniCariFormu.Id = 13;
             this.BtnYeniCariFormu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnYeniCariFormu.ImageOptions.Image")));
-            this.BtnYeniCariFormu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnYeniCariFormu.ImageOptions.LargeImage")));
             this.BtnYeniCariFormu.Name = "BtnYeniCariFormu";
+            this.BtnYeniCariFormu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.BtnYeniCariFormu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniCariFormu_ItemClick);
             // 
             // BtnCariListesiFormu
@@ -305,8 +311,8 @@ namespace TeknikServis
             this.BtnCariListesiFormu.Caption = "Cari Listesi";
             this.BtnCariListesiFormu.Id = 14;
             this.BtnCariListesiFormu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCariListesiFormu.ImageOptions.Image")));
-            this.BtnCariListesiFormu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnCariListesiFormu.ImageOptions.LargeImage")));
             this.BtnCariListesiFormu.Name = "BtnCariListesiFormu";
+            this.BtnCariListesiFormu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.BtnCariListesiFormu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCariListesiFormu_ItemClick);
             // 
             // BtnCariIlIstatistikFormu
@@ -482,37 +488,48 @@ namespace TeknikServis
             this.barButtonItem33.Name = "barButtonItem33";
             this.barButtonItem33.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // barButtonItem34
+            // BtnRehberFormu
             // 
-            this.barButtonItem34.Caption = "Rehber";
-            this.barButtonItem34.Id = 35;
-            this.barButtonItem34.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.Image")));
-            this.barButtonItem34.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.LargeImage")));
-            this.barButtonItem34.Name = "barButtonItem34";
+            this.BtnRehberFormu.ActAsDropDown = true;
+            this.BtnRehberFormu.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.BtnRehberFormu.Caption = "Rehber";
+            this.BtnRehberFormu.DropDownControl = this.popupMenu1;
+            this.BtnRehberFormu.Id = 35;
+            this.BtnRehberFormu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnRehberFormu.ImageOptions.Image")));
+            this.BtnRehberFormu.Name = "BtnRehberFormu";
+            this.BtnRehberFormu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnRehberFormu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnRehberFormu_ItemClick);
             // 
-            // barButtonItem35
+            // popupMenu1
             // 
-            this.barButtonItem35.Caption = "Mail Kutusu";
-            this.barButtonItem35.Id = 36;
-            this.barButtonItem35.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.Image")));
-            this.barButtonItem35.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.LargeImage")));
-            this.barButtonItem35.Name = "barButtonItem35";
+            this.popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Ribbon = this.ribbonControl1;
             // 
-            // barButtonItem36
+            // BtnGelenMesajlarFormu
             // 
-            this.barButtonItem36.Caption = "Yeni Mail";
-            this.barButtonItem36.Id = 37;
-            this.barButtonItem36.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.Image")));
-            this.barButtonItem36.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.LargeImage")));
-            this.barButtonItem36.Name = "barButtonItem36";
+            this.BtnGelenMesajlarFormu.Caption = "Gelen Mesajlar";
+            this.BtnGelenMesajlarFormu.Id = 36;
+            this.BtnGelenMesajlarFormu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGelenMesajlarFormu.ImageOptions.Image")));
+            this.BtnGelenMesajlarFormu.Name = "BtnGelenMesajlarFormu";
+            this.BtnGelenMesajlarFormu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnGelenMesajlarFormu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGelenMesajlarFormu_ItemClick);
+            // 
+            // BtnYeniMailFormu
+            // 
+            this.BtnYeniMailFormu.Caption = "Yeni Mail";
+            this.BtnYeniMailFormu.Id = 37;
+            this.BtnYeniMailFormu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnYeniMailFormu.ImageOptions.Image")));
+            this.BtnYeniMailFormu.Name = "BtnYeniMailFormu";
+            this.BtnYeniMailFormu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnYeniMailFormu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniMailFormu_ItemClick);
             // 
             // barButtonItem37
             // 
             this.barButtonItem37.Caption = "SMS Gönder";
             this.barButtonItem37.Id = 38;
             this.barButtonItem37.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.Image")));
-            this.barButtonItem37.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
             this.barButtonItem37.Name = "barButtonItem37";
+            this.barButtonItem37.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // barButtonItem38
             // 
@@ -526,7 +543,9 @@ namespace TeknikServis
             // 
             this.BtnAnasayfa.Caption = "Anasayfa";
             this.BtnAnasayfa.Id = 40;
+            this.BtnAnasayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAnasayfa.ImageOptions.Image")));
             this.BtnAnasayfa.Name = "BtnAnasayfa";
+            this.BtnAnasayfa.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.BtnAnasayfa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAnasayfa_ItemClick);
             // 
             // BtnAjandaFormu
@@ -577,7 +596,9 @@ namespace TeknikServis
             // 
             this.BtnRaporFormu.Caption = "Rapor Sihirbazı";
             this.BtnRaporFormu.Id = 46;
+            this.BtnRaporFormu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnRaporFormu.ImageOptions.Image")));
             this.BtnRaporFormu.Name = "BtnRaporFormu";
+            this.BtnRaporFormu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.BtnRaporFormu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnRaporFormu_ItemClick);
             // 
             // ribbonPage1
@@ -589,9 +610,9 @@ namespace TeknikServis
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnAnasayfa);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Anasayfa";
             // 
             // ribbonPage2
             // 
@@ -769,9 +790,9 @@ namespace TeknikServis
             // 
             // ribbonPageGroup15
             // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem34);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem35);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem36);
+            this.ribbonPageGroup15.ItemLinks.Add(this.BtnRehberFormu);
+            this.ribbonPageGroup15.ItemLinks.Add(this.BtnGelenMesajlarFormu);
+            this.ribbonPageGroup15.ItemLinks.Add(this.BtnYeniMailFormu);
             this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem37);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "İletişim";
@@ -801,9 +822,9 @@ namespace TeknikServis
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(180, 365);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(178, 22);
+            this.labelControl1.Size = new System.Drawing.Size(170, 22);
             this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "7E7™ Software Inc.";
+            this.labelControl1.Text = "NT™ Software Inc.";
             // 
             // pictureEdit1
             // 
@@ -844,14 +865,16 @@ namespace TeknikServis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "Form1";
-            this.Text = "7E7™";
+            this.Text = "NT™";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -915,9 +938,9 @@ namespace TeknikServis
         private DevExpress.XtraBars.BarButtonItem BtnWord;
         private DevExpress.XtraBars.BarButtonItem BtnExcel;
         private DevExpress.XtraBars.BarButtonItem barButtonItem33;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem34;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem35;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem36;
+        private DevExpress.XtraBars.BarButtonItem BtnRehberFormu;
+        private DevExpress.XtraBars.BarButtonItem BtnGelenMesajlarFormu;
+        private DevExpress.XtraBars.BarButtonItem BtnYeniMailFormu;
         private DevExpress.XtraBars.BarButtonItem barButtonItem37;
         private DevExpress.XtraBars.BarButtonItem barButtonItem38;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
@@ -937,6 +960,8 @@ namespace TeknikServis
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage10;
         private DevExpress.XtraBars.BarButtonItem BtnRaporFormu;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
     }
 }
 

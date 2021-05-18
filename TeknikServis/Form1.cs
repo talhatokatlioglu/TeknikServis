@@ -308,10 +308,34 @@ namespace TeknikServis
                 panel1.Visible = false;
 
                 AnasayfaFormu = new Formlar.FrmAnasayfa();
-                AnasayfaFormu.MdiParent = this;
-                AnasayfaFormu.Show();
+                AnasayfaFormu.MdiParent = this;s
             }
             */
+        }
+
+        private void BtnRehberFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            panel1.Visible = false;
+
+            Iletisim.FrmRehber RehberFormu = new Iletisim.FrmRehber();
+            RehberFormu.MdiParent = this;
+            RehberFormu.Show();
+        }
+
+        private void BtnGelenMesajlarFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            panel1.Visible = false;
+
+            Iletisim.FrmGelenMesajlar GelenMesajlarFormu = new Iletisim.FrmGelenMesajlar();
+            GelenMesajlarFormu.MdiParent = this;
+            GelenMesajlarFormu.Show();
+        }
+
+        private void BtnYeniMailFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Iletisim.FrmMail YeniMaiLFormu = new Iletisim.FrmMail();
+            YeniMaiLFormu.Show();
+
         }
     }
 }
